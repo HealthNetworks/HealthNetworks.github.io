@@ -15,3 +15,6 @@
     border-radius: 50%;
     border: 2px solid #fff; /* Optional: Add border */
 }
+h1 {
+    background-color: lightblue;
+}
