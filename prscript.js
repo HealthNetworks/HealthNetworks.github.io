@@ -10,7 +10,8 @@ var modal = document.getElementById("bioModal");
 var span = document.getElementsByClassName("close")[0];
 
 // Function to display the modal with the clicked image's alt text
-function displayBio(event) {
+function displayBio(event) 
+{   console.log("Displaying bio...");
     var bioText = event.target.alt;
     document.getElementById("bioContent").innerHTML = "<p>" + bioText + "</p>";
     modal.style.display = "block";
