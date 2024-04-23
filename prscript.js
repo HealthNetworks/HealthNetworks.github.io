@@ -1,46 +1,39 @@
 // prscript.js
 
-// Function to display the bio box next to the clicked image
-function displayBio(event) {
-    var bioText = event.target.alt;
-    
-    // Create the bio box element
-    var bioBox = document.createElement('div');
-    bioBox.className = 'bio-box';
-    bioBox.innerHTML = "<span class='close'>&times;</span><p>" + bioText + "</p>";
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all bio buttons
+    var bioButtons = document.querySelectorAll('.bio-button');
 
-    // Calculate the position for the bio box
-    var rect = event.target.getBoundingClientRect();
-    var posX = rect.left + window.scrollX + rect.width + 10; // Adjust position as needed
-    var posY = rect.top + window.scrollY;
+    // Get the bio modal
+    var modal = document.getElementById("bioModal");
 
-    // Set the position for the bio box
-    bioBox.style.left = posX + 'px';
-    bioBox.style.top = posY + 'px';
+    // Get the <span> element that closes the modal
+    var closeButton = document.querySelector(".modal .close");
 
-    // Append the bio box to the body
-    document.body.appendChild(bioBox);
+    // Add event listeners to all bio buttons
+    bioButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            // Get the position of the clicked button
+            var buttonRect = button.getBoundingClientRect();
 
-    // Add event listener to remove the bio box when clicked outside
-    document.addEventListener('click', function(event) {
-        if (!bioBox.contains(event.target) && event.target !== event.currentTarget) {
-            bioBox.parentNode.removeChild(bioBox);
-            document.removeEventListener('click', arguments.callee);
+            // Set modal position next to the clicked button
+            modal.style.left = buttonRect.right + 'px';
+            modal.style.top = buttonRect.top + 'px';
+
+            // Display the modal
+            modal.style.display = "block";
+        });
+    });
+
+    // Close the modal when the close button is clicked
+    closeButton.addEventListener('click', function() {
+        modal.style.display = "none";
+    });
+
+    // Close the modal when clicking anywhere outside the modal content
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
         }
     });
-
-    // Add event listener to close the bio box when clicking on the close button
-    var closeButton = bioBox.querySelector('.close');
-    closeButton.addEventListener('click', function(event) {
-        bioBox.parentNode.removeChild(bioBox);
-        event.stopPropagation(); // Prevent the click event from propagating to the document
-    });
-}
-
-// Get all images with class "person"
-var images = document.querySelectorAll('.person img');
-
-// Loop through each image and add a click event listener
-images.forEach(function(image) {
-    image.addEventListener('click', displayBio);
 });
