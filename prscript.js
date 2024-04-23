@@ -7,7 +7,7 @@ function displayBio(event) {
     // Create the bio box element
     var bioBox = document.createElement('div');
     bioBox.className = 'bio-box';
-    bioBox.innerHTML = "<p>" + bioText + "</p>";
+    bioBox.innerHTML = "<span class='close'>&times;</span><p>" + bioText + "</p>";
 
     // Calculate the position for the bio box
     var rect = event.target.getBoundingClientRect();
@@ -22,16 +22,19 @@ function displayBio(event) {
     document.body.appendChild(bioBox);
 
     // Add event listener to remove the bio box when clicked outside
-    document.addEventListener('click', removeBioBox);
-}
+    document.addEventListener('click', function(event) {
+        if (!bioBox.contains(event.target) && event.target !== event.currentTarget) {
+            bioBox.parentNode.removeChild(bioBox);
+            document.removeEventListener('click', arguments.callee);
+        }
+    });
 
-// Function to remove the bio box
-function removeBioBox(event) {
-    var bioBox = document.querySelector('.bio-box');
-    if (bioBox && !event.target.closest('.person')) {
+    // Add event listener to close the bio box when clicking on the close button
+    var closeButton = bioBox.querySelector('.close');
+    closeButton.addEventListener('click', function(event) {
         bioBox.parentNode.removeChild(bioBox);
-        document.removeEventListener('click', removeBioBox);
-    }
+        event.stopPropagation(); // Prevent the click event from propagating to the document
+    });
 }
 
 // Get all images with class "person"
