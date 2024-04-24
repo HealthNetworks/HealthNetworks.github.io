@@ -19,6 +19,7 @@
 /* Hover effect for images */
 .person img:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust shadow as needed */
+    cursor: pointer;
 }
 
 /* Modal styles */
