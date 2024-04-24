@@ -73,7 +73,7 @@
     background-color: transparent; /* Remove background color */
 }
 
-.navbar::after {
+.nav::after {
     content: '';
     position: absolute;
     bottom: 0;
