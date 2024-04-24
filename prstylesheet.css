@@ -63,42 +63,47 @@
 /* Add styles for header, navigation, sections, etc. */
 
 /* Example header styles */
+* Example header styles */
 .header {
-    background-color: #333;
-    color: #fff;
+    color: #ffffff; /* Change text color */
     padding: 20px 0;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
+    justify-content: space-between; /* Spread elements evenly */
     align-items: center;
     padding: 20px 0;
+    background-color: transparent; /* Remove background color */
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Make links appear in one line */
 }
 
 .nav-links li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px; /* Add space between links */
 }
 
-.nav-links li:last-child {
-    margin-right: 0;
+.nav-links li:first-child {
+    margin-left: 0; /* Remove margin for the first link */
 }
 
 .nav-links li a {
-    color: #333; /* Change link color */
+    color: #000000; /* Change link color */
     text-decoration: none;
 }
 
 .nav-links li a:hover {
     color: #555; /* Change link color on hover */
     text-decoration: underline; /* Underline on hover */
+}
+
+.logo {
+    margin: 0;
 }
 
 /* Add other necessary styles for sections, grid, etc. */
