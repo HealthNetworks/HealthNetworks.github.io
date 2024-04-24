@@ -78,7 +78,7 @@
     padding: 0;
     margin: 0;
     display: flex; /* Make links appear in one line */
-    justify-content: flex-end; /* Align links to the right */
+    
 }
 
 .nav-links li {
