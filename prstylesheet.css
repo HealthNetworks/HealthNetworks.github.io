@@ -86,7 +86,7 @@
 }
 
 .nav-links li:first-child {
-    margin-left: 0; /* Reset margin for the first link */
+    margin-left: 20px; /* Reset margin for the first link */
 }
 
 .nav-links li a {
