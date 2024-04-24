@@ -71,12 +71,9 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Align links to the right */
     align-items: center;
-}
-
-.logo {
-    margin: 0;
+    padding: 20px 0;
 }
 
 .nav-links {
@@ -95,8 +92,16 @@
 }
 
 .nav-links li a {
-    color: #fff;
+    color: #333; /* Change link color */
     text-decoration: none;
 }
 
+.nav-links li a:hover {
+    color: #555; /* Change link color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
 /* Add other necessary styles for sections, grid, etc. */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
