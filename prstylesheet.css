@@ -115,3 +115,9 @@ body {
     align-items: center;
     justify-content: flex-end; /* Align links to the right */
 }
+.navlogo {
+    float: left;
+}
+.navlinks {
+    float: right;
+}
