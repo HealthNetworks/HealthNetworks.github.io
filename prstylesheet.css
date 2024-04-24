@@ -96,7 +96,7 @@
 }
 
 .nav-links li:first-child {
-    padding-left: 200px; /* Reset margin for the first link */
+    padding-left: 300px; /* Reset margin for the first link */
 }
 
 .nav-links li a {
