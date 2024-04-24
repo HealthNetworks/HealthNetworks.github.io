@@ -113,4 +113,5 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: flex-end; /* Align links to the right */
 }
