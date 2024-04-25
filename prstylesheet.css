@@ -103,6 +103,7 @@
     margin: 0;
     float: left; /* Float the logo to the left */
     padding-left: 10px;
+    font-size: 20px;
 }
 .nav-links {
     float: right; /* Float the links to the right */
