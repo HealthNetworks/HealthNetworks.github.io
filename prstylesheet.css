@@ -71,6 +71,13 @@
     align-items: center;
     padding: 20px 0;
     background-color: transparent; /* Remove background color */
+    position: fixed; /* Fix the navbar position */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Take up full width */
+    background-color: #ffffff; /* Add background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
+    z-index: 1000; /* Ensure the navbar is above other content */
 }
 
 .nav-links {
