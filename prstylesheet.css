@@ -59,59 +59,48 @@
     cursor: pointer;
 }
 
-/* Navbar styles */
+.header {
+    background-color: #333; /* Example background color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+}
+
 .navbar {
-    position: fixed; /* Fix the navbar position */
-    top: 0; /* Position it at the top */
-    left: 0; /* Align it to the left */
-    width: 100%; /* Take up full width */
-    background-color: #ffffff; /* Add background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
-    z-index: 1000; /* Ensure the navbar is above other content */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    color: #fff; /* Example color */
+    /* Add any other styles you want for the logo */
 }
 
 .nav-links {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
     margin: 0;
+    padding: 0;
     display: flex;
 }
 
 .nav-links li {
-    margin-left: 20px; /* Add space between links */
+    margin-left: 15px; /* Adjust spacing between links */
 }
 
-.nav-links li:first-child {
-    margin-left: 0; /* Reset margin for the first link */
-}
-
-.nav-links li a {
-    color: #333; /* Change link color */
+.nav-links a {
     text-decoration: none;
-}
-
-.nav-links li a:hover {
-    color: #555; /* Change link color on hover */
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Logo styles */
-.logo {
-    margin: 0;
-    float: left; /* Float the logo to the left */
-}
-.nav-links {
-    float: right; /* Float the links to the right */
-}
-/* Header container styles */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: #fff; /* Example color */
+    /* Add any other styles you want for the links */
 }
 
 
