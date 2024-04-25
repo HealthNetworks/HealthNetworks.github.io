@@ -60,7 +60,6 @@
 }
 
 .header {
-    background-color: #333; /* Example background color */
     position: fixed;
     top: 0;
     left: 0;
@@ -82,7 +81,7 @@
 
 .logo {
     margin: 0;
-    color: #fff; /* Example color */
+    background-color: #fff; /* Example color */
     /* Add any other styles you want for the logo */
 }
 
