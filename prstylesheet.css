@@ -59,18 +59,8 @@
     cursor: pointer;
 }
 
-/* Example header styles */
-.header {
-    color: #333; /* Change text color */
-    padding: 20px 0;
-}
-
+/* Navbar styles */
 .navbar {
-    display: flex;
-    justify-content: space-between; /* Spread elements evenly */
-    align-items: center;
-    padding: 20px 0;
-    background-color: transparent; /* Remove background color */
     position: fixed; /* Fix the navbar position */
     top: 0; /* Position it at the top */
     left: 0; /* Align it to the left */
@@ -78,14 +68,17 @@
     background-color: #ffffff; /* Add background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
     z-index: 1000; /* Ensure the navbar is above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Make links appear in one line */
-    
+    display: flex;
 }
 
 .nav-links li {
@@ -93,7 +86,7 @@
 }
 
 .nav-links li:first-child {
-    padding-left: 300px; /* Reset margin for the first link */
+    margin-left: 0; /* Reset margin for the first link */
 }
 
 .nav-links li a {
@@ -110,6 +103,7 @@
     margin: 0;
     margin-right: auto; /* Push logo to the left */
 }
+
 
 
 /* Add other necessary styles for sections, grid, etc. */
