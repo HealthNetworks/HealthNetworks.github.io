@@ -102,8 +102,11 @@
 /* Logo styles */
 .logo {
     margin: 0;
+    float: left; /* Float the logo to the left */
 }
-
+.nav-links {
+    float: right; /* Float the links to the right */
+}
 /* Header container styles */
 .header-container {
     display: flex;
@@ -111,15 +114,6 @@
     align-items: center;
 }
 
-/* Navbar logo styles */
-.logo {
-    float: left;
-}
-
-/* Navbar links styles */
-.nav-links {
-    float: right;
-}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
