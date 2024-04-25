@@ -116,11 +116,12 @@ body {
     align-items: center;
     justify-content: flex-end; /* Align links to the right */
 }
-.navlogo {
+.logo {
     float: left;
-    /* font-size: 20px; */
 }
-.navlinks {
+
+/* Navbar links styles */
+.nav-links {
     float: right;
 }
 
