@@ -153,8 +153,8 @@ body {
   }
   
   .section {
-    padding: 40px 0;
-    background-color: #f9f6f6; /* Background color for the section */
+    padding: 30px 0;
+    background-color: #cccccc; /* Background color for the section */
   }
   
   .container {
