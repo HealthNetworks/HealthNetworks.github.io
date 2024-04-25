@@ -122,60 +122,54 @@ body {
     float: right;
 }
 
-.container{
-
+.container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-}
-/* Target only elements within the #publications section */
-#publications .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-#publications h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#publications h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-#publications a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-#publications a:hover {
-  text-decoration: underline;
-}
-
-#publications p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-#publications i {
-  font-style: italic;
-}
-
-#publications .section {
-  padding: 40px 0;
-  background-color: #f8f9fa; /* Background color for the section */
-}
-
-#publications .container {
-  background-color: #ffffff; /* Background color for the content area */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
-}
-
-/* Adjustments for links within paragraphs */
-#publications p a {
-  color: #007bff;
-  text-decoration: underline;
-}
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  i {
+    font-style: italic;
+  }
+  
+  .section {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Background color for the section */
+  }
+  
+  .container {
+    background-color: #ffffff; /* Background color for the content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  }
+  
+  /* Adjustments for links within paragraphs */
+  p a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
