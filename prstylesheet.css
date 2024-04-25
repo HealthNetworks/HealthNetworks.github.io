@@ -122,11 +122,10 @@ body {
     float: right;
 }
 
+.container{
 
-If you need to avoid conflicts with other HTML elements that might share the same class names, you can use more specific selectors to target only the elements within the #publications section. Here's a revised version of the CSS:
-
-css
-Copy code
+    max-width: 800px;
+}
 /* Target only elements within the #publications section */
 #publications .container {
   max-width: 800px;
