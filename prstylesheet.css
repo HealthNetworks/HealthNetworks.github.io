@@ -117,6 +117,7 @@ body {
 }
 .navlogo {
     float: left;
+    font-size: 20px;
 }
 .navlinks {
     float: right;
