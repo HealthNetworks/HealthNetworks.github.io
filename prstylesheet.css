@@ -180,9 +180,6 @@ p a {
   text-align: center; /* Center the text horizontally */
   /*padding: 20px 0; /* Add padding for spacing */
 }
-.footer-container {
-  background-color: #f8f8f8;
-}
 .footer p {
   margin: 0; /* Remove default margin */
 }
