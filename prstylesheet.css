@@ -70,6 +70,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  border-bottom: #007bff solid 2px;
 }
 
 .nav-links {
