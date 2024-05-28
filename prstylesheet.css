@@ -178,7 +178,7 @@ p a {
 .footer-container{
   background-color: #00ff00;
 }
-.social-icons {
+/* .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,4 +189,4 @@ p a {
 
 .social-icons a:hover img.twitter {
   content: url(prassets/twitter_hover.png);
-}
+} */
