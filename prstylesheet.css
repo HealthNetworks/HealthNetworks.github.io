@@ -179,7 +179,6 @@ body {
   background-color: #ffffff; /* Background color for the content area */
 }
 
-.footer {
+.footer-container {
   background-color: #888; /* Background color for the footer */
-  color: #ffffff; /* Text color for the footer */
 }
