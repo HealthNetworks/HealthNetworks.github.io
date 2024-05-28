@@ -161,7 +161,7 @@ body {
   }
   
   .container {
-    background-color: #ffffff; /* Background color for the content area */
+    background-color: #888888; /* Background color for the content area */
     border-radius: 3px; /* Rounded corners */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Drop shadow */
   }
