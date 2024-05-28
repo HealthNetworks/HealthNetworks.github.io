@@ -186,6 +186,11 @@ p a {
   margin: 0; /* Remove default margin */
   font-size: 8px;
 }
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
 /* .social-icons {
   display: flex;
   justify-content: center;
