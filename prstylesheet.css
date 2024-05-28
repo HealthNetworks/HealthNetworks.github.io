@@ -157,11 +157,11 @@ i {
 
 .section {
   padding: 10px 0;
-  background-color: #888; /* Background color for the section */
+  background-color: #ffffff; /* Background color for the section */
 }
 
 .container {
-  background-color: #f00; /* Background color for the content area */
+  background-color: #ffffff; /* Background color for the content area */
   border-radius: 3px; /* Rounded corners */
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Drop shadow */
 }
@@ -175,7 +175,7 @@ p a {
 .section:first-of-type {
   margin-top: 2%; /* Adjust this value as needed */
 }
-.footer-container {
+.footer {
   background-color: #00ff00;
 }
 .social-icons {
