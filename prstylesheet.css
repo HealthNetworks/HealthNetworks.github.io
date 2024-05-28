@@ -203,3 +203,14 @@ p a {
 .social-icons a:hover img.twitter {
   content: url(prassets/twitter_hover.png);
 } */
+
+h2 {
+  text-align: right; /* Aligns all h2 elements to the right */
+  margin-bottom: 0.5em; /* Adds space between h2 elements and the horizontal line */
+}
+
+/* Style for h2 elements except the one with id "about" */
+h2:not(#about) {
+  text-align: end; /* Aligns all h2 elements except "about" to the end of the container */
+  border-bottom: 1px solid black; /* Adds a horizontal line underneath */
+}
