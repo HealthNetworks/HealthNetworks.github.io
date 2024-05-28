@@ -184,7 +184,7 @@ p a {
 }
 .footer p {
   margin: 0; /* Remove default margin */
-  font-size: 2px;
+  font-size: 8px;
 }
 /* .social-icons {
   display: flex;
