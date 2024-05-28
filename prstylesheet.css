@@ -175,3 +175,6 @@ body {
   .section:first-of-type {
     margin-top: 2%; /* Adjust this value as needed */
 }
+.footer {
+  background-color: #888;
+}
