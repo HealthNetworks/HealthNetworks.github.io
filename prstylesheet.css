@@ -179,12 +179,12 @@ p a {
   background-color: #f9fafb; /* Gray background color */
   text-align: center; /* Center the text horizontally */
   /* padding:  0; Add padding for spacing */
-  height: 5%;
-  font-size: 8px;
+  height: 5vh;
+  /* font-size: 8px; */
 }
 .footer p {
   margin: 0; /* Remove default margin */
-  /* font-size: 8px; */
+  font-size: 20px;
 }
 /* .social-icons {
   display: flex;
