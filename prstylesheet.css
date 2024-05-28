@@ -178,6 +178,11 @@ p a {
 .footer-container {
   background-color: #00ff00;
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .social-icons a img {
   transition: filter 0.3s ease-in-out;
 }
