@@ -208,6 +208,6 @@ p a {
 /* Style for h2 elements except the one with id "about" */
 h2:not(#about) {
   text-align: left; /* Aligns all h2 elements to the right */
-  margin-bottom: 0.5em;
-  border-bottom: 0.5px solid gray; /* Adds a horizontal line underneath */
+  /* margin-bottom: 0.5em;
+  border-bottom: 0.5px solid gray; Adds a horizontal line underneath */
 }
