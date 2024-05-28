@@ -157,7 +157,7 @@ body {
   
   .section {
     padding: 10px 0;
-    background-color: #f8f9fa; /* Background color for the section */
+    background-color: #ffffff; /* Background color for the section */
   }
   
   .container {
@@ -172,3 +172,6 @@ body {
     text-decoration: underline;
   }
   
+  .section:first-of-type {
+    margin-top: 2%; /* Adjust this value as needed */
+}
