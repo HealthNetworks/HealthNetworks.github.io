@@ -175,7 +175,7 @@ p a {
 .section:first-of-type {
   margin-top: 2%; /* Adjust this value as needed */
 }
-.footer {
+.footer-container{
   background-color: #00ff00;
 }
 .social-icons {
