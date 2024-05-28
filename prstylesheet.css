@@ -178,10 +178,11 @@ p a {
 .footer {
   background-color: #f9fafb; /* Gray background color */
   text-align: center; /* Center the text horizontally */
-  /*padding: 20px 0; /* Add padding for spacing */
+  padding: 3% 0; /* Add padding for spacing */
 }
 .footer p {
   margin: 0; /* Remove default margin */
+  font-size: 12px;
 }
 /* .social-icons {
   display: flex;
