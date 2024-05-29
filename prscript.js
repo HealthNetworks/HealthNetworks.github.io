@@ -11,9 +11,12 @@ var span = document.getElementsByClassName("close")[0];
 
 // Function to display the modal with the clicked image's alt text
 function displayBio(event) {
-    var bioText = event.target.alt;
-    document.getElementById("bioContent").innerHTML = "<p>" + bioText + "</p>";
-    modal.style.display = "block";
+    // Check if the clicked element is not a social icon
+    if (!event.target.closest('.social-icons')) {
+        var bioText = event.target.alt;
+        document.getElementById("bioContent").innerHTML = "<p>" + bioText + "</p>";
+        modal.style.display = "block";
+    }
 }
 
 // Loop through each image and add a click event listener
